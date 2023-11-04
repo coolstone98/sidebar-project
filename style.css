@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins&family=Roboto&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+   background: url(programming\ evolution-2.jpeg) center no-repeat;
+   background-size: cover;
+   height: 100vh;
+   width: 100%;
+   overflow: hidden;
+}
+
+
+.sidebar {
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    transition: 0.3s all ease-in;
+}
+
+.toggle {
+    position: absolute;
+    right: -15px;
+    top: 15px;
+    border: none;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+.toggle i {
+    color: black;
+    font-size: 22px;
+}
+
+.main-header {
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.main-header a {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 60px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.search-bar {
+    width: 100%;
+    margin-top: 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    font-size: 16px;
+    width: 220px;
+    height: 29px;
+    padding-left: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border: none;
+    border-right: 1px solid #fff;
+    outline: none;
+    transition: 0.3s all ease-in-out;
+}
+
+.search-bar input:focus {
+    border-color: #fff7;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
+    transform: scale(1, 1.2);
+}
+
+.search-bar .search-icon {
+    height: 27px;
+    width: 30px;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.search-icon i {
+    font-size: 22px;
+    padding: 2px;
+}
+
+.sidebar .menu {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+
+.menu li {
+    margin-top: 10px;
+    padding: 14px 20px;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.3s all linear;
+}
+
+.menu li:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.menu i {
+    color: #fff;
+    font-size: 23px;
+    padding-right: 8px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.socials {
+    width: 100%;
+    padding-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-top:  1px solid rgba(255, 255, 255, 0.1);
+}
+
+.socials i {
+    margin: 5px;
+    padding: 15px;
+    font-size: 22px;
+    color: #fff;
+    transition: all 0.3s linear;
+}
+
+.socials i:hover {
+    color: black;
+    background-color: #fff;
+    border-radius: 50px;
+    font-size: 25px;
+}
+
+/* styles for the closed sidebar */
+.closed {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* initials for header when sidebar closed */
+.sidebar.closed .main-header a::before {
+    content: "TC";
+    padding: 5px;
+    width: 15px;
+    color: black;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.sidebar.closed .search-bar .search-icon {
+    width: 50px;
+}
+
+.sidebar.closed li {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hiding the list text when sidebar is closed */
+.sidebar.closed li span,
+.sidebar.closed .main-header a span {
+    display: none;
+}
+
+/* Hiding the sidebar */
+.sidebar.closed .search-bar input {
+    height: 0;
+    width: 0;
+    border: none;
+    position: absolute;
+    background-color: transparent;
+}
+
+.sidebar.closed .socials {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 100px;
+}

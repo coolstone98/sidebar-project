@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="sidebar">
+        <button class="toggle" id="toggle-btn">
+          <i class="bx bx-chevron-left" id="toggle-icon"></i>
+        </button>
+
+        <div class="main-header">
+          <a href="#"><span>Typical Coder</span></a>
+        </div>
+
+        <div class="search-bar">
+          <input type="text" />
+          <div class="search-icon">
+            <i class="bx bx-search" id="search-icon"></i>
+          </div>
+        </div>
+
+        <ul class="menu">
+          <li>
+            <a href="#">
+              <i class="bx bxs-dashboard"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-link"></i>
+              <span>Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-navigation"></i>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-analyse"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-help-circle"></i>
+              <span>About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-server"></i>
+              <span>Services</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bxs-phone-call"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bx bx-message-rounded"></i>
+              <span>Feedback</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Socials -->
+        <div class="socials">
+          <a href="#">
+            <i class='bx bxl-facebook'></i>
+          </a>
+          <a href="#">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="#">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a href="#">
+            <i class='bx bxs-envelope'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
